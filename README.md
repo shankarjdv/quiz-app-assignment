@@ -17,6 +17,7 @@ Create quizzes with questions and options.
 Submit answers for each quiz.
 View results based on the answers submitted.
 It is designed following RESTful principles, using a Node.js backend with SQLite as the database. The app includes essential validation and error handling.
+
 -------------------------------------------------------------------------------------
 2. Technologies Used
 Backend: Node.js
@@ -47,6 +48,7 @@ user_id: storing dummy user Id
 question_id: Integer (Foreign Key referencing questions table)
 selected_option: Integer (The option selected by the user)
 is_correct: Boolean (True if the selected option is correct)
+
 ---------------------------------------------------------------------------------- 
 
 4. Key Features
@@ -61,7 +63,7 @@ Input Validation: Validate inputs using Joi for both user and quiz data.
 ---------------------------------------------------------------------------------
 5. API Endpoints:
 
-    A. Get Quiz(GET):  http://localhost:3000/api/quizzes/1
+ A. Get Quiz(GET):  http://localhost:3000/api/quizzes/1
     payload: {
          "title": "General Knowledge Quiz",
          "questions": [
@@ -96,13 +98,8 @@ Input Validation: Validate inputs using Joi for both user and quiz data.
         "quizeId":1
     }
     -----------------------------------------------------------------------
-
-    Please refer to the API screenshot located in the "PostManAPIScreenShot" folder.
-
+Please refer to the API screenshot found in the "PostManAPIScreenShot" folder located in the root directory of the project.
 -------------------------------------------------------------------------------------
-
-
-
 
 
 6. Project Structure
